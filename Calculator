@@ -1,0 +1,35 @@
+import java.util.*;
+public class M
+{
+    public static void main (String[] args)
+    {
+           Scanner sc = new Scanner (System.in);
+           System.out.println("Enter first no ");
+           double noA= sc.nextDouble();
+           System.out.println("Enter operator");
+           char operator= sc.next().charAt(0);
+           System.out.println("Enter second no ");
+           double noB= sc.nextDouble();
+           double result =0;
+           switch (operator)
+           {
+               case '+' :
+                result= noA+noB;
+                break;
+
+                case '-':
+                result=noA-noB;
+                break;
+
+                case '*':
+                result = noA*noB;
+                break;
+
+                case '/' :
+                result = noA/noB;
+                break;
+           }
+
+           System.out.println("Your result after calculation is : "+result);
+    }
+}
